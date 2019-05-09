@@ -18,6 +18,7 @@
 	background-color: rgba(10, 0, 0, 0.5);
 	max-width: 400px;
 	color: #fff;
+	overflow: hidden;
 }
 
 .banner .submit-form .box-content{
