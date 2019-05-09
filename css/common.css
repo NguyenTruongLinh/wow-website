@@ -1,0 +1,37 @@
+.width-1080{
+	width: 1080px;
+	margin: auto;
+}
+
+header .container{
+	padding: 16px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo{
+	width: 150px;
+}
+
+header .menu ul{
+	list-style: none;
+}
+
+header .menu ul li{
+	display: inline-block;
+}
+
+header .menu ul li a{
+	padding: 15px 8px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.row{
+	display: flex;
+}
+
+.mt-30{
+	margin-top: 30px;
+}
