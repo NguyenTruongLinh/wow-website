@@ -27,7 +27,7 @@
 }
 
 .header .menu{
-	display: block;
+	display: inline-block;
 }
 
 .header .menu ul{
@@ -42,6 +42,10 @@
 	padding: 15px 8px;
 	font-size: 14px;
 	font-weight: 500;
+}
+
+.header .menu ul li a.active{
+	color: #2c85a2;
 }
 
 /*Hamburger Icon*/
