@@ -3,35 +3,105 @@
 	margin: auto;
 }
 
-header .container{
-	padding: 16px 0;
+.header{
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	transition: 0.4s;
+	z-index: 99;
+	border-bottom: 1px solid rgba(72,72,72,0.13);
+}
+
+.header .container{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-header .logo{
-	width: 150px;
+.header .logo{
+	width: 180px;
+	transition: 0.4s;
 }
 
-header .menu ul{
+.header .menu ul{
 	list-style: none;
 }
 
-header .menu ul li{
+.header .menu ul li{
 	display: inline-block;
 }
 
-header .menu ul li a{
+.header .menu ul li a{
 	padding: 15px 8px;
 	font-size: 14px;
 	font-weight: 500;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer .foot{
+	padding-top: 30px;
+}
+
+footer .logo{
+	display: block;
+	width: 90%;
+}
+
+footer ul .col{
+	width: 25%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+footer ul .col .title{
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+
+footer ul .col ul li:not(:first-child){
+	margin-bottom: 8px;
+}
+
+footer .fl-footer{
+	height: 59px;
+	border-top: 1px solid #e6e6e6;
+	margin-top: 40px;
+	font-size: 12px;
+}
+
+footer .fl-footer a{
+	margin-left: 3px;
 }
 
 .row{
 	display: flex;
 }
 
+.justify-space-between{
+	justify-content: space-between;
+}
+
+.justify-center{
+	justify-content: center;
+}
+
+.align-items-center{
+	align-items: center;
+}
+
 .mt-30{
 	margin-top: 30px;
+}
+
+.mt-40{
+	margin-top: 40px;
+}
+
+.mt-50{
+	margin-top: 50px;
 }

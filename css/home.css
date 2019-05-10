@@ -1,8 +1,9 @@
 .banner{
-	background: url('../images/banner-home.png');
+	background: url('../images/banner.jpg');
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
+    margin-top: 69px;
 }
 
 .width-1100{
@@ -299,4 +300,168 @@
 
 .infrastructure ul{
 	margin-left: 48px;
+}
+
+.regiter-project{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.regiter-project .title{
+	font-size: 32px;
+    line-height: 40px;
+	text-align: center;
+}
+
+.regiter-project .form-dk{
+	margin-top: 30px;
+	background: #f7f7f7;
+    box-shadow: #c5c5c5 5px 5px 20px 2px;
+}
+
+.regiter-project .col-left,
+.regiter-project .col-right{
+	width: 50%;
+	text-align: center;
+}
+
+.regiter-project .col-left .avatar{
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.regiter-project .col-left .job-title{
+	margin-top: 15px;
+	font-style: italic;
+}
+
+.regiter-project .col-left .hotline,
+.regiter-project .col-left .phone{
+	width: 50%;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+.regiter-project .col-left{
+	background: #fff;
+}
+
+.regiter-project .col-left .number{
+	text-align: left;
+}
+
+.regiter-project .col-left i{
+	font-size: 50px;
+	margin-right: 15px;
+}
+
+.regiter-project .col-left .fa{
+	transform: rotate(90deg);
+}
+
+.regiter-project .col-right{
+	padding: 50px 60px;
+}
+
+.regiter-project .col-right .form-group{
+	width: 100%;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.regiter-project .col-right .form-group:first-child{
+	margin-top: 0;
+}
+
+.regiter-project .col-right .form-group input{
+	width: 100%;
+	height: 40px;
+	padding: 0 15px;
+	font-size: 16px;
+}
+
+.regiter-project .col-right .form-group button{
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	background: #ffb501;
+	height: 40px;
+	margin-top: 10px;
+	font-weight: 600;
+	border: none;
+}
+
+.invest{
+	background: url('../images/bg-invert-home.png');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.invest .col-left,
+.invest .col-right{
+	width: 50%;
+}
+
+.invest .col-left ul{
+	list-style: none;
+	overflow: hidden;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+.invest .col-left ul li{
+	width: 50%;
+	float: left;
+	height: 233px;
+}
+
+.invest .col-left ul li .image{
+	margin: 10px;
+	border: 1px solid #cccccc;
+	background: #fff;
+}
+
+.invest .col-left ul li .image .box-img{
+	margin: 10px;
+}
+
+.invest .col-right{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.invest .col-right h4{
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.invest .col-right .img{
+	width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.dowload-doc{
+	background: #2c85a2;
+	color: #fff;
+	padding: 25px;
+}
+
+.dowload-doc p{
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.dowload-doc .btn-dowload{
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	padding: 5px 40px;
 }
