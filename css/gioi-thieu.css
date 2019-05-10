@@ -1,0 +1,118 @@
+.banner{
+	background: url('../images/bg-header-gt.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-top: 69px;
+}
+
+.banner .container{
+	padding: 60px 20px 80px;
+}
+
+.banner .title h3{
+	font-size: 30px;
+	line-height: 38px;
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+}
+
+.description{
+	margin: 40px 0;
+}
+
+.description .container{
+	max-width: 1020px;
+	padding: 0 40px;
+	margin: auto;
+	text-align: justify;
+}
+
+.description h4{
+	font-size: 22px;
+	line-height: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.description .image{
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.description .image .img-1{
+	width: 90%;
+	margin: auto;
+}
+
+.description ul{
+	margin-left: 50px;
+}
+
+.description .image-2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.description .image-2 .img-2{
+	width: 70%;
+	margin: auto;
+}
+
+.description .divide{
+	margin-top: 40px;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.description .divide:after{
+	content: '';
+	width: 90%;
+	height: 2px;
+	background: #999999;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%);
+}
+
+@media (max-width: 970px){
+	.banner{
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 480px){
+	.description .container{
+		padding: 0 20px;
+	}
+
+	.description .image,
+	.description .image-2{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.description .image .img-1,
+	.description .image-2 .img-2{
+		width: 100%;
+	}
+
+	.description .divide{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.description .divide:after{
+		width: 100%;
+	}
+
+	.description ul{
+		margin-left: 20px;
+	}
+
+	.description .image{
+		margin-bottom: 20px;
+	}
+}
