@@ -287,12 +287,20 @@ footer .fl-footer{
 	footer ul .col:last-child{
 		text-align: center;
 		width: 100%;
+		overflow: hidden;
 	}
 }
 /*End Footer*/
 
 .mobile-footer{
 	display: none;
+}
+
+iframe{
+	max-width: 204px;
+	width: 100%;
+	max-height: 130px;
+	height: 100%;
 }
 
 /*mobile-footer*/
