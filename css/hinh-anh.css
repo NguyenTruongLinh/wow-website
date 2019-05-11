@@ -283,13 +283,13 @@ section .all .slider-two .right-t.nonr-t {
   display: none;
   position: fixed;
   z-index: 999;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: rgba(0, 0, 0, .7);
 }
 
 /* Modal Content */
@@ -313,12 +313,15 @@ section .all .slider-two .right-t.nonr-t {
 }
 
 .modal-content {
-  position: relative;
-  /*background-color: #fefefe;*/
+  	position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   margin: auto;
   padding: 0;
-  width: 90%;
-  height: 70%;
+  width: 70%;
+  height: 90%;
   max-width: 1200px;
 }
 
@@ -330,13 +333,18 @@ section .all .slider-two .right-t.nonr-t {
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  z-index: 999;
+    padding: 10px;
+    background: #ff7f00;
+    border-radius: 2px;
 }
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
+    background: rgba(255, 127, 0, .8);
 }
 
 .mySlides {
@@ -361,7 +369,7 @@ section .all .slider-two .right-t.nonr-t {
 .mySlides img{
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .cursor {
@@ -376,7 +384,7 @@ section .all .slider-two .right-t.nonr-t {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
+  margin-top: -40px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -384,17 +392,18 @@ section .all .slider-two .right-t.nonr-t {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  background: #ff7f00;
 }
 
 /* Position the "next button" to the right */
 .prev {
   left: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0 3px 3px 0;
 }
 
 .next {
   right: 0;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
