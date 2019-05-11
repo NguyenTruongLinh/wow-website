@@ -1,0 +1,106 @@
+.banner{
+	background: url('../images/bg-header-gt.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-top: 69px;
+}
+
+.banner .container{
+	padding: 60px 20px 80px;
+}
+
+.banner .title h3{
+	font-size: 30px;
+	line-height: 38px;
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+}
+
+.description{
+	margin: 40px 0;
+}
+
+.description .container{
+	max-width: 1020px;
+	padding: 0 40px;
+	margin: auto;
+	text-align: justify;
+}
+
+.description h4{
+	font-size: 22px;
+	line-height: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.description .divide{
+	margin-top: 40px;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.description .divide:after{
+	content: '';
+	width: 90%;
+	height: 2px;
+	background: #999999;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%);
+}
+
+.description .col-left,
+.description .col-right{
+	width: 50%;
+}
+
+.description .col-left{
+	padding-right: 30px;
+}
+
+.description .col-left ul{
+	margin-left: 40px;
+}
+
+@media (max-width: 970px){
+	.banner{
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 768px){
+	.description .row{
+		display: block;
+	}
+
+	.description .col-left,
+	.description .col-right{
+		width: 100%;
+	}
+
+	.description .col-right{
+		margin-top: 20px;
+	}
+
+	.description .col-left{
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 480px){
+	.description .container{
+		padding: 0;
+	}
+
+	.description .col-left{
+		padding: 0 20px;
+	}
+
+	.description h4{
+		padding: 0 20px;
+	}
+}

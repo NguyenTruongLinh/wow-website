@@ -179,6 +179,7 @@
 	.header .menu{
 		text-align: center;
 		padding-top: 10px;
+		width: 100%;
 	}
 
 	.header .divide{
@@ -336,6 +337,12 @@ iframe{
 	#stickThis.stick {
 		z-index: 99;
 		display: block;
+	}
+}
+
+@media (max-width: 480px){
+	iframe{
+		max-width: 305px;
 	}
 }
 /*End mobile-footer*/
