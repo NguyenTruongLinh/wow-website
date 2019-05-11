@@ -36,3 +36,12 @@ $(function() {
     sticktothetop();
 });
 // End Sticky
+
+// Equal image in tin-tuc
+$.fn.equalizeHeights = function(){
+  return this.height( Math.max.apply(this, $(this).map(function(i,e){ return $(e).height() }).get() ) )
+}
+$('#height, #equal').equalizeHeights();
+
+//End Equal image
+

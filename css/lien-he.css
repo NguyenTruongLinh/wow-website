@@ -1,0 +1,119 @@
+.contact{
+	margin-top: 40px;
+}
+
+.contact .container{
+	max-width: 1024px;
+	padding: 0 20px;
+	margin: auto;
+}
+
+.contact .wow-agent .avatar{
+	width: 144px;
+	height: 144px;
+}
+
+.contact .wow-agent .info .name{
+	font-size: 28px;
+	line-height: normal;
+}
+
+.contact .wow-agent .info{
+	margin-left: 30px;
+}
+
+.contact .wow-agent .info .phone{
+	margin-top: 12px;
+}
+
+.contact .wow-agent .info .phone i{
+	transform: rotate(90deg);
+}
+
+.contact .contact-form{
+	margin-top: 40px;
+	background: #f7f7f7;
+    box-shadow: #c5c5c5 5px 5px 20px 2px;
+}
+
+.contact .contact-form .col-left,
+.contact .contact-form .col-right{
+	width: 50%;
+}
+
+.contact .contact-form .col-right{
+	padding: 40px;
+}
+
+.contact .contact-form .form-group{
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contact .contact-form .form-group p{
+	margin-bottom: 3px;
+}
+
+.contact .contact-form .form-group input{
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 14px;
+}
+
+.contact .contact-form .form-group:last-child{
+	margin-top: 20px;
+}
+
+.contact .contact-form .form-group button{
+	padding: 10px 40px;
+	background: #fff;
+	border: 1px solid #c8c7c7
+}
+
+.contact .divide{
+	margin-top: 40px;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.contact .divide:after{
+	content: '';
+	width: 90%;
+	height: 2px;
+	background: #999999;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%);
+}
+
+@media (max-width: 768px){
+	.contact .contact-form{
+		display: block !important;
+	}
+
+	.contact .contact-form .col-left,
+	.contact .contact-form .col-right{
+		width: 100%;
+	}
+
+	.contact .contact-form .col-right{
+		padding: 30px;
+	}
+}
+
+@media (max-width: 480px){
+	.contact .wow-agent{
+		display: block !important;
+	}
+
+	.contact .wow-agent .avatar{
+		margin: auto;
+	}
+
+	.contact .wow-agent .info{
+		margin-left: 0;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
