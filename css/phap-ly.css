@@ -1,0 +1,39 @@
+.juridical{
+	margin-top: 50px;
+}
+
+.juridical .container{
+	max-width: 1024px;
+	width: 100%;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.juridical .image{
+	max-width: 705px;
+	width: 100%;
+	margin: auto;
+}
+
+.juridical .container .see-more{
+	text-align: right;
+	margin-top: 20px;
+}
+
+.juridical .divide{
+	margin-top: 40px;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.juridical .divide:after{
+	content: '';
+	width: 90%;
+	height: 2px;
+	background: #999999;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%);
+}
+

@@ -1,0 +1,453 @@
+.image-show .container{
+	max-width: 1024px;
+	width: 100%;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.image-show .owl-item img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50%;
+}
+
+/*.image-show .img{
+	width: 100%;
+	height: 650px;
+}*/
+
+/*.image-show .owl-thumbs{
+	margin-top: 50px;
+}*/
+
+.image-show .owl-thumbs button{
+	float: left;
+	width: calc(20% - 12px);
+	margin-right: 15px;
+	height: 124px;
+}
+
+.image-show .owl-thumbs button:last-child{
+	margin-right: 0;
+}
+
+.image-show .owl-thumbs button img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50%;
+}
+
+/*Slide*/
+.image-show{
+	text-align: center;
+	margin-top: 30px;
+}
+
+section .all {
+  /*max-width: 1024px;*/
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  margin: auto;
+}
+section .all .slider {
+	max-width: 1024px;
+	padding: 0 20px;
+	margin: auto;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 3px;
+  position: relative;
+}
+section .all .slider .owl-nav, section .all .slider .owl-dots {
+  display: none;
+}
+section .all .slider:hover .left {
+  visibility: visible;
+  opacity: 1;
+  left: 20px;
+}
+section .all .slider:hover .right {
+  visibility: visible;
+  opacity: 1;
+  right: 20px;
+}
+section .all .slider .item-box {
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  border-radius: 3px;
+  background-size: cover;
+}
+section .all .slider .item-box:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  display: block;
+}
+section .all .slider .left {
+  position: absolute;
+  z-index: 1;
+  top: 275px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: left ease .25s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  background: url(http://svgshare.com/i/2V9.svg) top left;
+}
+section .all .slider .left:hover {
+  visibility: visible;
+  opacity: 1;
+  left: 20px;
+  background: url(http://svgshare.com/i/2UW.svg) top left;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+section .all .slider .left.nonl {
+  left: -20px;
+  opacity: 0;
+  visibility: hidden;
+}
+section .all .slider .right {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 275px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: right ease .25s;
+  background: url(http://svgshare.com/i/2V9.svg) top left;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+section .all .slider .right:hover {
+  visibility: visible;
+  opacity: 1;
+  right: 20px;
+  background: url(http://svgshare.com/i/2UW.svg) top left;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+section .all .slider .right.nonr {
+  right: -20px;
+  opacity: 0;
+  visibility: hidden;
+}
+section .all .slider-two {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  background: #e7e7e7;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+section .all .slider-two .owl-nav, section .all .slider-two .owl-dots {
+  display: none;
+}
+section .all .slider-two:hover .left-t {
+  visibility: visible;
+  opacity: 1;
+  left: 3px;
+}
+section .all .slider-two:hover .right-t {
+  visibility: visible;
+  opacity: 1;
+  right: 3px;
+}
+section .all .slider-two .item {
+  transition: all ease .25s;
+  height: 150px;
+  border-radius: 3px;
+  border: solid 3px #e6ecf2;
+  cursor: pointer;
+  background: no-repeat url(http://www.cyw51.com/file/upload/201302/22/18-49-19-74-127.jpg) center center;
+  background-size: cover;
+}
+section .all .slider-two .item.active {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  border: solid 3px #cc2e38;
+}
+section .all .slider-two .owl-stage {
+  padding: 20px 0;
+}
+section .all .slider-two .left-t {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease .25s;
+  width: 40px;
+  height: 144px;
+  background: no-repeat rgba(204, 46, 56, 0.85) url(http://svgshare.com/i/2Vs.svg) center center;
+  left: -40px;
+}
+section .all .slider-two .left-t:hover {
+  visibility: visible;
+  opacity: 1;
+  left: 3px;
+}
+section .all .slider-two .left-t.nonl-t {
+  left: -40px;
+  opacity: 0;
+  visibility: hidden;
+}
+section .all .slider-two .right-t {
+  background: no-repeat rgba(204, 46, 56, 0.85) url(http://svgshare.com/i/2Vs.svg) center center;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 23px;
+  right: -40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease .25s;
+  width: 40px;
+  height: 144px;
+  background-color: rgba(204, 46, 56, 0.85);
+}
+section .all .slider-two .right-t:hover {
+  visibility: visible;
+  opacity: 1;
+  right: 3px;
+}
+section .all .slider-two .right-t.nonr-t {
+  right: -40px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (max-width: 768px){
+	section .all .slider .item-box{
+		height: 400px;
+	}
+
+	section .all .slider-two .item{
+		height: 130px;
+	}
+
+	section .all .slider .left,
+	section .all .slider .right{
+		top: 185px;
+	}
+
+	section .all .slider-two .left-t,
+	section .all .slider-two .right-t{
+		height: 123px;
+	}
+}
+
+@media (max-width: 480px){
+	section .all .slider .item-box{
+		height: 250px;
+	}
+
+	section .all .slider-two .item{
+		height: 100px;
+	}
+
+	section .all .slider .left,
+	section .all .slider .right{
+		top: 105px;
+	}
+
+	section .all .slider-two .left-t,
+	section .all .slider-two .right-t{
+		height: 93px;
+	}
+}
+
+/*Lightbox*/
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.column {
+  	float: left;
+    width: calc(16% - 1px);
+    height: 100px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.column:last-child{
+  margin-right: 0;
+}
+
+.column img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50%;
+}
+
+.modal-content {
+  position: relative;
+  /*background-color: #fefefe;*/
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  height: 70%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  /*max-width: 1024px;*/
+  /*max-height: 576px;*/
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.mySlides .cover-img{
+  overflow: hidden;
+  width: 100%;
+  /*max-height: 70%;*/
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mySlides img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*img {
+  margin-bottom: -4px;
+}*/
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 0;
+  color: white;
+  text-align: left;
+}
+
+.caption-container p{
+  margin: 20px 0;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.thumb-modal{
+	overflow: hidden;
+    margin-top: 30px;
+}
+/*End Lightbox*/
