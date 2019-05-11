@@ -24,7 +24,7 @@
 
 .description .container{
 	max-width: 1020px;
-	padding: 0 40px;
+	/*padding: 0 40px;*/
 	margin: auto;
 	text-align: justify;
 }
@@ -66,6 +66,12 @@
 	margin-left: 40px;
 }
 
+@media (max-width: 1024px){
+	.description .container{
+		padding: 0 20px;
+	}
+}
+
 @media (max-width: 970px){
 	.banner{
 		margin-top: 0;
@@ -92,15 +98,21 @@
 }
 
 @media (max-width: 480px){
-	.description .container{
-		padding: 0;
-	}
-
-	.description .col-left{
-		padding: 0 20px;
-	}
-
 	.description h4{
 		padding: 0 20px;
+	}
+
+	.description .image{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.description .divide{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.description .divide:after{
+		width: 100%;
 	}
 }
