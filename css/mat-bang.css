@@ -1,0 +1,73 @@
+.description .top .col-left,
+.description .bot .col-right{
+	width: 35%;
+}
+
+.description .top .col-right,
+.description .bot .col-left{
+	width: 65%;
+}
+
+.description .bot .col-right{
+	padding-left: 30px;
+}
+
+.description .border{
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.description .bot-mb{
+	display: none;
+}
+
+.description .border:after{
+	content: '';
+	width: 76px;
+	height: 2px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+}
+
+@media (max-width: 768px){
+	.description .row{
+		display: block;
+	}
+
+	.description .bot{
+		display: none;
+	}
+
+	.description .bot-mb{
+		display: block;
+		margin-top: 50px;
+		text-align: right;
+	}
+
+	.description .bot-mb .border:after{
+		right: 0;
+		left: unset;
+	}
+
+	.description .col-left,
+	.description .col-right{
+		width: 100% !important;
+	}
+
+	.description .image{
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 480px){
+	.description .image{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.description .bot-mb{
+		margin-top: 30px;
+	}
+}
