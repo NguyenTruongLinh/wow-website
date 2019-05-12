@@ -76,13 +76,14 @@ section .all .slider:hover .right {
   right: 20px;
 }
 section .all .slider .item-box {
-  padding: 20px;
+  padding-top: 66.66%;
   overflow: hidden;
   width: 100%;
-  height: 600px;
+  /*height: 600px;*/
   position: relative;
   border-radius: 3px;
   background-size: cover;
+  background-position: 50%;
 }
 section .all .slider .item-box:after {
   width: 100%;
@@ -173,7 +174,8 @@ section .all .slider-two:hover .right-t {
 }
 section .all .slider-two .item {
   transition: all ease .25s;
-  height: 150px;
+  /*height: 150px;*/
+  padding-top: 66.66%;
   border-radius: 3px;
   border: solid 3px #e6ecf2;
   cursor: pointer;
@@ -223,7 +225,7 @@ section .all .slider-two .right-t {
   opacity: 0;
   transition: all ease .25s;
   width: 40px;
-  height: 144px;
+  height: 182px;
   background-color: rgba(204, 46, 56, 0.85);
 }
 section .all .slider-two .right-t:hover {
@@ -238,13 +240,13 @@ section .all .slider-two .right-t.nonr-t {
 }
 
 @media (max-width: 768px){
-	section .all .slider .item-box{
+	/*section .all .slider .item-box{
 		height: 400px;
-	}
+	}*/
 
-	section .all .slider-two .item{
+	/*section .all .slider-two .item{
 		height: 130px;
-	}
+	}*/
 
 	section .all .slider .left,
 	section .all .slider .right{
@@ -253,18 +255,22 @@ section .all .slider-two .right-t.nonr-t {
 
 	section .all .slider-two .left-t,
 	section .all .slider-two .right-t{
-		height: 123px;
+		height: 121px;
+	}
+
+	section .all .slider-two{
+		margin-top: 30px;
 	}
 }
 
 @media (max-width: 480px){
-	section .all .slider .item-box{
+	/*section .all .slider .item-box{
 		height: 250px;
-	}
+	}*/
 
-	section .all .slider-two .item{
+	/*section .all .slider-two .item{
 		height: 100px;
-	}
+	}*/
 
 	section .all .slider .left,
 	section .all .slider .right{
@@ -273,7 +279,7 @@ section .all .slider-two .right-t.nonr-t {
 
 	section .all .slider-two .left-t,
 	section .all .slider-two .right-t{
-		height: 93px;
+		height: 88px;
 	}
 }
 
@@ -321,7 +327,7 @@ section .all .slider-two .right-t.nonr-t {
   margin: auto;
   padding: 0;
   width: 70%;
-  height: 90%;
+  /*height: 90%;*/
   max-width: 1200px;
 }
 
@@ -458,5 +464,23 @@ img.hover-shadow {
 .thumb-modal{
 	overflow: hidden;
     margin-top: 30px;
+}
+
+@media (max-width: 768px){
+	.modal-content{
+		width: 90%;
+	}
+}
+
+@media (max-width: 480px){
+	.prev, .next{
+		padding: 8px;
+		margin-top: -20px;
+	}
+
+	.close{
+		padding: 5px 10px;
+		font-size: 25px;
+	}
 }
 /*End Lightbox*/
