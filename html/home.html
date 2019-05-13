@@ -9,6 +9,9 @@
     <meta property="og:site_name" content="Rever">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/owl.theme.default.min.css">
+	<link rel="shortcut icon" href="../images/favicon.png" />
 </head>
 <body>
 	<header class="header" id="navbar">
@@ -64,6 +67,16 @@
 	</header>
 
 	<section class="banner-home">
+		<div class="img-slider">
+			<div class="owl-carousel" id="slide-home">
+				<div>
+					<img src="../images/banner.jpg" alt="" />
+				</div>
+				<div>
+					<img src="../images/banner-home.jpg" alt="" />
+				</div>
+			</div>
+		</div>
 		<div class="container width-1100">
 			<div class="submit-form">
 				<div class="box-content">
@@ -406,6 +419,15 @@
 </body>
 
 <script src="../js/jquery-2.2.1.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
 <script src="../js/home.js"></script>
-
+<script>
+	$('#slide-home').owlCarousel({
+		loop: true,
+		items: 1,
+		autoplay: true,
+		touchDrag: false,
+		mouseDrag: false
+	})
+</script>
 </html>
