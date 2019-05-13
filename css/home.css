@@ -583,12 +583,20 @@
 
 .regiter-project .col-left .hotline,
 .regiter-project .col-left .phone{
-	width: 50%;
+	/*width: 50%;*/
 	margin-top: 50px;
 	margin-bottom: 40px;
 	display: flex;
 	align-items: center;
     justify-content: center;
+}
+
+.regiter-project .col-left .hotline{
+	width: 40%;
+}
+
+.regiter-project .col-left .phone{
+	width: 60%;
 }
 
 .regiter-project .col-left{
@@ -645,9 +653,7 @@
 	.regiter-project .col-left i{
 		font-size: 30px;
 	}
-}
 
-@media (max-width: 767px){
 	.regiter-project .form-dk{
 		display: block !important;
 	}
@@ -666,9 +672,7 @@
 	.regiter-project .col-right{
 		padding: 30px;
 	}
-}
 
-@media (max-width: 320px){
 	.regiter-project .form-dk .col-left .row{
 		display: block;
 	}
@@ -684,7 +688,6 @@
 	}
 
 	.regiter-project .col-left .phone{
-		padding-left: 40px;
 		padding-bottom: 30px;
 	}
 }
