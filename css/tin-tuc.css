@@ -1,42 +1,42 @@
-.news{
+.news-page{
 	margin-top: 69px;
 }
 
-.news .container{
+.news-page .container{
 	max-width: 1040px;
 	padding: 0 20px;
 	margin: auto;
 	padding-top: 60px;
 }
 
-.news ul{
+.news-page ul{
 	list-style: none;
 	overflow: hidden;
 }
 
-.news ul li{
+.news-page ul li{
 	width: calc(50% - 20px);
 	margin-right: 40px;
 	margin-bottom: 50px;
 	float: left;
 }
 
-.news ul li:nth-child(2n){
+.news-page ul li:nth-child(2n){
 	margin-right: 0;
 }
 
-.news ul li .thumbnail{
+.news-page ul li .thumbnail{
 	display: block;
 }
 
-.news ul li .thumbnail img{
+.news-page ul li .thumbnail img{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	object-position: 50%;
 }
 
-.news ul li .title{
+.news-page ul li .title{
 	font-size: 22px;
 	line-height: 30px;
 	margin-top: 15px;
@@ -44,48 +44,48 @@
 	overflow: hidden;
 }
 
-.news ul li a:hover{
+.news-page ul li a:hover{
 	color: #2c85a2;
 }
 
-.news ul li .times{
+.news-page ul li .times{
 	margin-bottom: 15px;
 }
 
-.news ul li .descrip{
+.news-page ul li .descrip{
 	margin-bottom: 15px;
 }
 
 @media (max-width: 970px){
-	.news{
+	.news-page{
 		margin-top: 0;
 	}
 }
 
 @media (max-width: 768px){
-	.news ul li{
+	.news-page ul li{
 		width: calc(50% - 13px);
 		margin-right: 25px;
 		margin-bottom: 30px;
 		float: left;
 	}
 
-	.news ul li .title,
-	.news ul li .times,
-	.news ul li .descrip{
+	.news-page ul li .title,
+	.news-page ul li .times,
+	.news-page ul li .descrip{
 		margin-bottom: 10px;
 	}
 }
 
 @media (max-width: 480px){
-	.news ul li{
+	.news-page ul li{
 		width: 100%;
 		margin-right: 0;
 	}
 
-	.news ul li .title,
-	.news ul li .times,
-	.news ul li .descrip{
+	.news-page ul li .title,
+	.news-page ul li .times,
+	.news-page ul li .descrip{
 		margin-bottom: 7px;
 	}
 }

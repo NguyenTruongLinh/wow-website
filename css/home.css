@@ -1,5 +1,5 @@
-/*Banner*/
-.banner{
+/*banner-home*/
+.banner-home{
 	background: url('../images/banner.jpg');
 	background-size: cover;
     background-repeat: no-repeat;
@@ -15,48 +15,54 @@
 	padding: 0 20px;
 }
 
-.banner .container{
+.width-1240{
+	max-width: 1240px;
 	margin: auto;
 	padding: 0 20px;
 }
 
-.banner .submit-form{
+.banner-home .container{
+	margin: auto;
+	padding: 0 20px;
+}
+
+.banner-home .submit-form{
 	background-color: rgba(10, 0, 0, 0.5);
 	max-width: 400px;
 	color: #fff;
 	overflow: hidden;
 }
 
-.banner .submit-form .box-content{
+.banner-home .submit-form .box-content{
 	margin: 10px;
 	padding: 30px 20px;
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.banner .submit-form .box-content .sf-header p{
+.banner-home .submit-form .box-content .sf-header p{
 	font-size: 30px;
 	line-height: 38px;
 }
 
-.banner .submit-form .box-content .sf-header h3{
+.banner-home .submit-form .box-content .sf-header h3{
 	font-size: 46px;
 	font-weight: 600;
 	line-height: 54px;
 }
 
-.banner .submit-form .box-content .sub-tt{
+.banner-home .submit-form .box-content .sub-tt{
 	margin-top: 20px;
 }
 
-.banner .submit-form .form-group{
+.banner-home .submit-form .form-group{
 	margin-top: 20px;
 }
 
-.banner .submit-form .form-group{
+.banner-home .submit-form .form-group{
 	margin-top: 15px;
 }
 
-.banner .submit-form .form-group input{
+.banner-home .submit-form .form-group input{
 	height: 40px;
 	outline: none;
 	border: none;
@@ -65,7 +71,7 @@
 	font-size: 16px;
 }
 
-.banner .submit-form .form-group button{
+.banner-home .submit-form .form-group button{
 	width: 100%;
 	height: 40px;
 	background-color: #ffb501;
@@ -77,17 +83,17 @@
 	cursor: pointer;
 }
 
-.banner .submit-form .form-group:last-child{
+.banner-home .submit-form .form-group:last-child{
 	margin-top: 40px;
 }
 
-.banner .submit-form .phone{
+.banner-home .submit-form .phone{
 	margin-top: 60px;
 	text-align: center;
 	margin-bottom: 30px;
 }
 
-.banner .submit-form .phone a{
+.banner-home .submit-form .phone a{
 	color: #fff;
 	font-size: 30px;
 }
@@ -96,22 +102,22 @@
 	display: none;
 }
 
-.banner .overlay{
+.banner-home .overlay{
 	display: none;
 }
 
 @media (max-width: 970px){
-	.banner{
+	.banner-home{
 		margin-top: 0;
 	}
 }
 
 @media (max-width: 767px){
-	.banner{
+	.banner-home{
 		padding: 200px 40px;
 	}
 
-	.banner .submit-form{
+	.banner-home .submit-form{
 		display: none;
 	}
 
@@ -134,7 +140,7 @@
 		margin-top: 30px;
 	}
 
-	.banner .overlay{
+	.banner-home .overlay{
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -157,7 +163,7 @@
 		line-height: normal;
 	}
 }
-/*End Banner*/
+/*End banner-home*/
 
 /*intro-project*/
 
@@ -272,7 +278,25 @@
 	margin-bottom: 20px;
 	background-color: #2f83a0;
 	color: #fff;
-	padding: 50px 0;
+	/*padding: 50px 0;*/
+	position: relative;
+}
+
+.utilities ul li img{
+	height: 100%;
+	object-fit: cover;
+	object-position: 50%;
+}
+
+.utilities ul li p{
+	font-size: 20px;
+	color: #fff;
+	font-weight: 600;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
 .utilities ul li:nth-child(3n){
@@ -685,23 +709,62 @@
 	list-style: none;
 	overflow: hidden;
 	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
 .invest .col-left ul li{
-	width: 50%;
+	width: calc(50% - 10px);
 	float: left;
-	height: 233px;
-	display: inline-table;
+	margin-right: 20px;
+	/*height: 233px;*/
+	padding-top: 32.1%;
+    position: relative;
+}
+.invest .col-left ul li:last-child{
+	margin-right: 0;
 }
 
 .invest .col-left ul li .image{
-	margin: 10px;
+	/*margin: 10px;*/
 	border: 1px solid #cccccc;
 	background: #fff;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 0 20px;
 }
 
 .invest .col-left ul li .image .box-img{
-	margin: 10px;
+	height: 100%;
+    position: relative;
+
+}
+
+.invest .col-left ul li .image .box-img img{
+	position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.invest .col-left .image-bottom{
+	max-width: 255px;
+    padding-top: 32.1%;
+    position: relative;
+    padding-left: 20px;
+    border: 1px solid #cccccc;
+    position: relative;
+    margin: auto;
+    background: #fff;
+}
+
+.invest .col-left .image-bottom .box-img{
+	position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-right: 20px;
 }
 
 .invest .col-right{

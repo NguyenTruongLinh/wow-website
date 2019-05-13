@@ -10,6 +10,7 @@
 html * {
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 }
 input[type='search']::-webkit-search-cancel-button {
     -webkit-appearance: searchfield-cancel-button;

@@ -42,6 +42,8 @@ $.fn.equalizeHeights = function(){
   return this.height( Math.max.apply(this, $(this).map(function(i,e){ return $(e).height() }).get() ) )
 }
 $('#height, #equal').equalizeHeights();
+$('#hei-home, #equal-home').equalizeHeights();
+// $('#bank-home, #equal-bank').equalizeHeights();
 
 //End Equal image
 

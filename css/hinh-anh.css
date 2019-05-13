@@ -84,6 +84,7 @@ section .all .slider .item-box {
   border-radius: 3px;
   background-size: cover;
   background-position: 50%;
+  cursor: pointer;
 }
 section .all .slider .item-box:after {
   width: 100%;
